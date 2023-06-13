@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /SecretMessageDecoding/",
+    "build": "parcel build src/*.html --public-url /SecretMessageDecoding/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
