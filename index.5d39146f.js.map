@@ -1,0 +1,1 @@
+{"mappings":"ACEA,QAAQ,IAAI","sources":["<anon>","src/index.js"],"sourcesContent":["\nconsole.log(\"Майстерня: деплой білда від Parcel на GitHub Pages\");\n\n\n//# sourceMappingURL=index.5d39146f.js.map\n","import \"./css/styles.css\";\n\nconsole.log(\"Майстерня: деплой білда від Parcel на GitHub Pages\");\n"],"names":["console","log"],"version":3,"file":"index.5d39146f.js.map"}
