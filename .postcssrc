@@ -1,8 +1,7 @@
 {
-  "extends": "@parcel/config-default",
-  "optimizers": {
-    "*.css": [
-      "@parcel/optimizer-cssnano"
-    ]
+  "plugins": {
+    "postcss-import": true,
+    "postcss-url": true,
+    "postcss-custom-properties": true
   }
 }
