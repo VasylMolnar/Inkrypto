@@ -4,7 +4,6 @@ body {
   background-size: cover;
   min-height: 100vh;
 }
-
 h1 {
   color: #fff;
 }
@@ -53,7 +52,6 @@ textarea {
 label {
   cursor: pointer;
 }
-
 /* Style for the file input */
 input[type='file'] {
   display: none;
