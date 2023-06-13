@@ -1,25 +1,24 @@
 {
   "name": "parcel-deploy-tutorial",
   "version": "1.0.0",
-  "description": "## Майстерня: деплой білда від Parcel на GitHub Pages",
-  "main": "index.js",
+  "description": "",
+  "homepage": "https://VasylMolnar.github.io/Inkrypto",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /parcel-deploy-tutorial/",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /Inkrypto/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VasylMolnar/SecretMessageDecoding.git"
+    "url": "git+https://github.com/VasylMolnar/Inkrypto.git"
   },
   "bugs": {
-    "url": "https://github.com/VasylMolnar/SecretMessageDecoding/issues"
+    "url": "https://github.com/VasylMolnar/Inkrypto/issues"
   },
-  "homepage": "https://VasylMolnar.github.io/SecretMessageDecoding",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-nuke-dist": "^1.0.1"
