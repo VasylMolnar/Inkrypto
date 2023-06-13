@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["require","console","log"],"mappings":";;;AAEiE,aAFjEA,QAAA,oBAEAC,QAAQC,IAAI","file":"src.0bf892fa.js","sourceRoot":"../src","sourcesContent":["import \"./css/styles.css\";\n\nconsole.log(\"Майстерня: деплой білда від Parcel на GitHub Pages\");\n"]}
