@@ -5,7 +5,8 @@ body {
 }
 
 h1 {
-  color: #fff;
+  font-size: 48px;
+  color: #ff4949;
 }
 
 .container {
