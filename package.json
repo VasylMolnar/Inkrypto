@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /parcel-deploy-tutorial/",
+    "build": "parcel build src/index.html --public-url /SecretMessageDecoding/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
@@ -14,11 +14,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VasylMolnar/parcel-deploy-tutorial.git"
+    "url": "git+https://github.com/VasylMolnar/SecretMessageDecoding.git"
   },"bugs": {
-    "url": "https://github.com/VasylMolnar/parcel-deploy-tutorial/issues"
+    "url": "https://github.com/VasylMolnar/SecretMessageDecoding/issues"
   },
-  "homepage": "https://VasylMolnar.github.io/parcel-deploy-tutorial",
+  "homepage": "https://VasylMolnar.github.io/SecretMessageDecoding",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-nuke-dist": "^1.0.1"
