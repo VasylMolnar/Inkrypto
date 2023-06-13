@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "start": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url /SecretMessageDecoding/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
@@ -15,7 +15,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VasylMolnar/SecretMessageDecoding.git"
-  },"bugs": {
+  },
+  "bugs": {
     "url": "https://github.com/VasylMolnar/SecretMessageDecoding/issues"
   },
   "homepage": "https://VasylMolnar.github.io/SecretMessageDecoding",
