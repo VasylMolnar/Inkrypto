@@ -10,15 +10,24 @@
 <body>
   <div class="container">
     <h1>Steganography Tool</h1>
-  </div>
 
-  <div class="drag_drop">
-    <label>
-      <p>Drag and drop animated IMG</p>
-      <input type="file" class="imageFile" accept="image/*">
-    </label>
-  </div>
 
+    <div class="drag_drop">
+      <label>
+        <p>Drag and drop animated IMG</p>
+        <input type="file" class="imageFile" accept="image/*">
+      </label>
+    </div>
+
+    <textarea id="hiddenData" rows="4" cols="50" placeholder="Enter the text to be encrypted..."></textarea>
+
+    <div>
+      <div class="btn-list">
+        <button class="btn btn-danger">Encode</button>
+        <button class="btn btn-success">Decode</button>
+      </div>
+    </div>
+  </div>
   <script src="index.js"></script>
 </body>
 
