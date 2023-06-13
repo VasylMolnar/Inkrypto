@@ -1,3 +1,9 @@
-import "./css/styles.css";
+import './css/styles.css';
 
-console.log("Майстерня: деплой білда від Parcel на GitHub Pages");
+const imageFile = document.querySelector('.imageFile');
+
+imageFile.addEventListener('change', () => {
+  console.log(imageFile);
+});
+
+console.log('HI');
