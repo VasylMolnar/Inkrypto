@@ -21,8 +21,10 @@
   },
   "homepage": "https://VasylMolnar.github.io/SecretMessageDecoding",
   "devDependencies": {
+    "parcel": "^2.9.2",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-nuke-dist": "^1.0.1",
+    "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
