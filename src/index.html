@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="steganography.min.js"></script>
 
 </head>
 
@@ -20,26 +21,25 @@
   <div class="container">
     <h1>Steganography Tool</h1>
 
-    <div class="imageFile">
+    <div class="divElement">
       <label>
         <p>Select the animated IMG</p>
         <input type="file" class="fileInput" accept="image/*">
       </label>
-
     </div>
 
-    <textarea id="hiddenData" rows="4" cols="50" placeholder="Enter the text to be encrypted..."></textarea>
+    <textarea class="hiddenMessage" rows="4" cols="50" placeholder="Enter the text you want to encode..."></textarea>
 
     <div>
       <div class="btn-list">
-        <button class="btn btn-danger">Encode</button>
-        <button class="btn btn-success">Decode</button>
+        <button class="btn btn-danger btn-lg btnEncode" disabled>Encode</button>
+        <button class="btn btn-success btn-lg btnDecode" disabled>Decode</button>
+        <button class="btn btn-warning btn-lg btnReset" disabled>Reset</button>
       </div>
     </div>
   </div>
 
-  <script src="index.js" type="module"></script>
-
+  <script src="index.js"></script>
 </body>
 
 </html>
