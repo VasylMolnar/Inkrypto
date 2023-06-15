@@ -1,8 +1,7 @@
 import './css/styles.css';
-import steg from './steganography.min';
+import steganography from './js/steganography.min';
 import toggleButtons from './js/toggleButtons';
-
-import { hideMessage } from './js/hideMessage';
+import Swal from 'sweetalert2';
 
 const divElement = document.querySelector('.divElement');
 const fileInput = document.querySelector('.fileInput');
@@ -40,6 +39,46 @@ btnReset.addEventListener('click', () => {
 
 //btn Encode
 btnEncode.addEventListener('click', () => {
-  // hideMessage(hiddenMessage.value, selectedImage);
-  console.log(steg.encode(hiddenMessage.value, selectedImage));
+  const imgData = steganography.encode(hiddenMessage.value, selectedImage);
+  selectedImage = imgData;
+
+  Swal.fire({
+    title: 'Save the Encode Image.',
+    showDenyButton: true,
+    showCancelButton: true,
+    confirmButtonText: 'Save',
+    denyButtonText: `Don't save`,
+  }).then(result => {
+    if (result.isConfirmed) {
+      const link = document.createElement('a');
+      link.href = selectedImage;
+      link.download = 'encoded_image.gif';
+
+      // Trigger the download
+      link.click();
+
+      Swal.fire('Saved!', '', 'success');
+    } else if (result.isDenied) {
+      Swal.fire('Changes are not saved', '', 'info');
+    }
+  });
+});
+
+//btn Decode
+btnDecode.addEventListener('click', () => {
+  const secretMessage = steganography.decode(selectedImage);
+
+  if (secretMessage === '') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Nothing found!',
+    });
+  } else {
+    Swal.fire({
+      icon: 'success',
+      title: 'Success.',
+      text: `Decoded Message:  ${secretMessage}`,
+    });
+  }
 });
