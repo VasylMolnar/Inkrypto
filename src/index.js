@@ -52,7 +52,7 @@ btnEncode.addEventListener('click', () => {
     if (result.isConfirmed) {
       const link = document.createElement('a');
       link.href = selectedImage;
-      link.download = 'encoded_image.gif';
+      link.download = 'encoded_image.jpg';
 
       // Trigger the download
       link.click();
